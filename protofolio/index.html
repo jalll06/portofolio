@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizal Widianto — Software Developer Intern</title>
+  <meta name="description"
+    content="Portofolio Rizal Widianto, mahasiswa Informatika yang mencari kesempatan magang sebagai Software Developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo"><span class="nav__logo-bracket">&lt;</span>Rizal Widianto N<span
+          class="nav__logo-bracket">/&gt;</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#tentang">Tentang</a>
+        <a href="#skills">Skills</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <a href="#kontak" class="btn btn--primary btn--small nav__cta">Hubungi Saya</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO / BENTO -->
+    <section class="hero">
+      <div class="bento">
+
+        <!-- Kartu intro utama -->
+        <div class="cell cell--intro">
+          <div class="badge">
+            <span class="badge__dot"></span>
+            Terbuka untuk Magang
+          </div>
+          <h1 class="hero__title">Halo, saya <span class="grad-text">Rizal</span></h1>
+          <p class="hero__role">
+            Mahasiswa UBSI <span class="sep">·</span> Software Developer <span class="sep">·</span> Sedang
+            Mencari Magang
+          </p>
+          <p class="hero__desc">
+            Saya suka membangun aplikasi web dari nol — mulai dari merancang alur, menulis kode,
+            sampai deploy. Saat ini sedang mencari kesempatan magang untuk belajar langsung di
+            tim engineering sungguhan.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyek" class="btn btn--primary">Lihat Proyek Saya</a>
+            <a href="/CV-Nama-Anda.pdf" class="btn btn--ghost" download>Unduh CV</a>
+          </div>
+        </div>
+
+        <!-- Kartu foto -->
+        <div class="cell cell--photo">
+          <div class="photo-frame">
+            <span class="photo-placeholder">Foto Profil</span>
+          </div>
+          <div class="photo-caption">
+            <span class="label">Berbasis di</span>
+            <span class="value">Bandung, Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Kartu terminal / status -->
+        <div class="cell cell--terminal">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span></span><span></span><span></span>
+              <span class="terminal__title">status.sh</span>
+            </div>
+            <div class="terminal__body">
+              <span class="terminal__prompt">$</span>
+              <span id="typedText"></span><span class="terminal__cursor">|</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu pendidikan singkat -->
+        <div class="cell cell--stat">
+          <span class="stat__icon">🎓</span>
+          <div>
+            <p class="stat__label">Pendidikan</p>
+            <p class="stat__value">S1 Informatika, Semester 6</p>
+          </div>
+        </div>
+
+        <!-- Kartu proyek count -->
+        <div class="cell cell--stat">
+          <span class="stat__icon">🚀</span>
+          <div>
+            <p class="stat__label">Proyek Dibangun</p>
+            <p class="stat__value">10+ Proyek Pribadi &amp; Kuliah</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+      <p class="eyebrow">// tentang-saya</p>
+      <div class="about">
+        <h2 class="section__title">Sedikit cerita tentang saya</h2>
+        <p class="about__text">
+          Saya mahasiswa Informatika yang mulai belajar coding sejak semester awal, awalnya
+          cuma iseng bikin website sederhana, lalu keterusan sampai sekarang aktif ikut proyek
+          kuliah, lomba, dan belajar mandiri lewat dokumentasi &amp; kursus online.
+        </p>
+        <p class="about__text">
+          Saya paling nyaman kerja di frontend, tapi juga cukup percaya diri membangun backend
+          sederhana dan menghubungkan keduanya lewat API. Saya senang belajar hal baru dengan
+          cepat dan terbuka menerima masukan — cocok untuk lingkungan magang yang dinamis.
+        </p>
+        <div class="about__facts">
+          <div class="fact"><span class="fact__label">Universitas</span>Universitas BSI (UBSI)</div>
+          <div class="fact"><span class="fact__label">Jurusan</span>S1 Teknik Informatika</div>
+          <div class="fact"><span class="fact__label">IPK</span>3.7 / 4.00</div>
+          <div class="fact"><span class="fact__label">Ketersediaan</span>Full-time, 3–6 bulan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--tint" id="skills">
+      <p class="eyebrow">// tech-stack</p>
+      <h2 class="section__title">Yang saya kuasai</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li><span>HTML &amp; CSS</span><i class="dots"><i data-lvl="5"></i></i></li>
+            <li><span>JavaScript</span><i class="dots"><i data-lvl="4"></i></i></li>
+            <li><span>React</span><i class="dots"><i data-lvl="4"></i></i></li>
+            <li><span>Tailwind CSS</span><i class="dots"><i data-lvl="4"></i></i></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="skill-list">
+            <li><span>Node.js / Express</span><i class="dots"><i data-lvl="3"></i></i></li>
+            <li><span>PHP / Laravel</span><i class="dots"><i data-lvl="3"></i></i></li>
+            <li><span>REST API</span><i class="dots"><i data-lvl="4"></i></i></li>
+            <li><span>MySQL</span><i class="dots"><i data-lvl="3"></i></i></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Lainnya</h3>
+          <ul class="skill-list">
+            <li><span>Git / GitHub</span><i class="dots"><i data-lvl="4"></i></i></li>
+            <li><span>Figma</span><i class="dots"><i data-lvl="3"></i></i></li>
+            <li><span>Postman</span><i class="dots"><i data-lvl="4"></i></i></li>
+            <li><span>Linux Dasar</span><i class="dots"><i data-lvl="3"></i></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="activity__head">
+          <h3>Konsistensi belajar 12 minggu terakhir</h3>
+          <span class="activity__legend">Sedikit <i></i><i></i><i></i><i></i> Banyak</span>
+        </div>
+        <div class="activity__grid" id="activityGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section class="section" id="proyek">
+      <p class="eyebrow">// proyek-pilihan</p>
+      <h2 class="section__title">Beberapa yang saya bangun</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🏟️</span>
+            <div class="project__links">
+              <a href="https://github.com/jalll06/web-reservasi" target="_blank" rel="noopener"
+                aria-label="Lihat kode di GitHub">GitHub</a>
+              <a href="https://smsport-three.vercel.app/" target="_blank" rel="noopener"
+                aria-label="Lihat live demo aplikasi">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>SM Sport Center — Web Reservasi Lapangan</h3>
+          <p>Sistem reservasi lapangan olahraga online dengan pengecekan ketersediaan jadwal realtime, autentikasi JWT,
+            dashboard admin, dan integrasi payment gateway Midtrans.</p>
+          <div class="tags"><span>JavaScript</span><span>Node.js API</span><span>MySQL</span><span>Midtrans</span><span>Tailwind</span></div>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🎮</span>
+            <div class="project__links">
+              <a href="https://github.com/jalll06/project-basis-data" target="_blank" rel="noopener"
+                aria-label="Lihat kode di GitHub">GitHub</a>
+              <a href="https://project-basis-data-mado.vercel.app/" target="_blank" rel="noopener"
+                aria-label="Lihat live demo aplikasi">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Sistem Rental &amp; Katalog PlayStation</h3>
+          <p>Aplikasi web penyewaan console PlayStation (PS3, PS4, PS5) lengkap dengan form autentikasi login, katalog console, dan formulir transaksi sewa untuk proyek mata kuliah Basis Data.</p>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Basis Data</span></div>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">📋</span>
+            <div class="project__links">
+              <a href="#" aria-label="Lihat kode di GitHub">GitHub</a>
+              <a href="#" aria-label="Lihat demo langsung">Demo</a>
+            </div>
+          </div>
+          <h3>Aplikasi Manajemen Tugas</h3>
+          <p>To-do list kolaboratif dengan drag-and-drop dan autentikasi pengguna, proyek belajar mandiri.</p>
+          <div class="tags"><span>JavaScript</span><span>Express</span><span>REST API</span></div>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🌦️</span>
+            <div class="project__links">
+              <a href="#" aria-label="Lihat kode di GitHub">GitHub</a>
+              <a href="#" aria-label="Lihat demo langsung">Demo</a>
+            </div>
+          </div>
+          <h3>Dashboard Cuaca Real-Time</h3>
+          <p>Menampilkan data cuaca dari API publik dengan visualisasi grafik sederhana.</p>
+          <div class="tags"><span>JavaScript</span><span>Chart.js</span><span>API</span></div>
+        </article>
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🎨</span>
+            <div class="project__links">
+              <a href="#" aria-label="Lihat kode di GitHub">GitHub</a>
+              <a href="#" aria-label="Lihat demo langsung">Demo</a>
+            </div>
+          </div>
+          <h3>Landing Page Komunitas Kampus</h3>
+          <p>Website organisasi mahasiswa, dari desain di Figma sampai implementasi responsif.</p>
+          <div class="tags"><span>Figma</span><span>Tailwind</span><span>HTML/CSS</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section class="section section--tint" id="pengalaman">
+      <p class="eyebrow">// pengalaman</p>
+      <h2 class="section__title">Organisasi &amp; aktivitas</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date">2024 — Sekarang</div>
+          <div class="timeline__content">
+            <h3>Staf Divisi Teknologi — Himpunan Mahasiswa Informatika</h3>
+            <p>Mengelola dan mengembangkan website internal himpunan, serta membantu dokumentasi kegiatan.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2024</div>
+          <div class="timeline__content">
+            <h3>Peserta — Lomba Hackathon Nasional</h3>
+            <p>Membangun prototipe aplikasi dalam waktu 24 jam bersama tim 3 orang, masuk 10 besar finalis.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2023 — Sekarang</div>
+          <div class="timeline__content">
+            <h3>Volunteer Mengajar Coding Dasar</h3>
+            <p>Mengajar dasar-dasar web development untuk siswa SMA di program pengabdian masyarakat kampus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <p>&ldquo;Belajar paling cepat itu sambil membangun sesuatu yang nyata.&rdquo;</p>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section contact" id="kontak">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow">// hubungi-saya</p>
+          <h2 class="section__title">Tertarik mengajak saya magang?</h2>
+          <p class="contact__text">
+            Saya siap ditempatkan full-time selama periode magang dan bisa mulai sesuai jadwal
+            yang disepakati. Kirim pesan atau hubungi langsung lewat kanal di bawah.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:nama.anda@email.com">nama.anda@email.com</a>
+            <a href="tel:+6281234567890">+62 812-3456-7890</a>
+          </div>
+          <div class="contact__social">
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/jalll06" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+            <span class="field__error" data-error="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="nama@perusahaan.com" required>
+            <span class="field__error" data-error="email"></span>
+          </div>
+          <div class="field">
+            <label for="subject">Perihal</label>
+            <input type="text" id="subject" name="subject" placeholder="Contoh: Tawaran Magang">
+          </div>
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ceritakan sedikit tentang posisi magangnya..."
+              required></textarea>
+            <span class="field__error" data-error="message"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn__label">Kirim Pesan</span>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#top" class="nav__logo"><span class="nav__logo-bracket">&lt;</span>Rizal Widianto<span
+          class="nav__logo-bracket">/&gt;</span></a>
+      <p>&copy; <span id="year"></span> Rizal Widianto. Dibangun dengan HTML, CSS &amp; JavaScript.</p>
+      <div class="footer__links">
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jalll06" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:nama.anda@email.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+
+  <!-- Bottom nav mobile ala referensi -->
+  <nav class="mobile-dock" aria-label="Navigasi cepat">
+    <a href="#top" aria-label="Beranda" class="is-active"><span>⌂</span></a>
+    <a href="#proyek" aria-label="Proyek"><span>▤</span></a>
+    <a href="#skills" aria-label="Skills"><span>⌨</span></a>
+    <a href="#kontak" aria-label="Kontak"><span>✉</span></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
